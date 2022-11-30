@@ -4,66 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fonts/stylesheet.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <div id="spread-svg">
       <svg xmlns="http://www.w3.org/2000/svg">
-        <symbol
-          viewBox="0 0 18 17"
-          id="svg-search"
-          fill="inherit"
-          stroke="inherit"
-        >
-          <path
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M13.7344 11.1283C14.3841 10.0294 14.757 8.7475 14.757 7.37848C14.757 3.30346 11.4535 0 7.37848 0C3.30346 0 0 3.30346 0 7.37848C0 11.4535 3.30346 14.757 7.37848 14.757C9.26218 14.757 10.981 14.0511 12.2849 12.8894L16.1553 16.7598L17.7607 15.1545L13.7344 11.1283ZM12.4867 7.37848C12.4867 10.1997 10.1997 12.4867 7.37848 12.4867C4.55731 12.4867 2.2703 10.1997 2.2703 7.37848C2.2703 4.55731 4.55731 2.2703 7.37848 2.2703C10.1997 2.2703 12.4867 4.55731 12.4867 7.37848Z"
-            fill="inherit"
-            stroke="none"
-          ></path>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 14" id="three-bars"><rect y="12" width="16" height="2" rx="1"></rect><rect y="6" width="16" height="2" rx="1"></rect><rect width="16" height="2" rx="1"></rect>
         </symbol>
-        <symbol
-          viewBox="0 0 18 18"
-          id="svg-phone"
-          fill="inherit"
-          stroke="inherit"
-        >
-          <path
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M9.28755 0C11.5162 0.310887 13.5351 1.31846 15.1307 2.9141C16.644 4.43108 17.6366 6.34135 17.9999 8.44639L16.6177 8.68237C16.3069 6.86574 15.4491 5.21392 14.1419 3.90669C12.7635 2.53205 11.018 1.65931 9.09277 1.38963L9.28755 0ZM13.6848 11.9072C13.0968 11.3267 12.3626 11.3267 11.7783 11.9072L11.7782 11.9073C11.3325 12.3493 10.8868 12.7912 10.4486 13.2407C10.3288 13.3643 10.2276 13.3905 10.0815 13.3081C9.96725 13.2458 9.85002 13.1881 9.73288 13.1305C9.55441 13.0428 9.37615 12.9552 9.20881 12.8511C7.91657 12.0383 6.83408 10.9933 5.8752 9.81718C5.3995 9.23286 4.97625 8.60734 4.68034 7.90317C4.62041 7.76083 4.63165 7.66719 4.74777 7.55108C5.12955 7.18213 5.50309 6.80493 5.8778 6.42656L6.06623 6.23636C6.67676 5.62208 6.67676 4.90292 6.06248 4.28489C5.88832 4.10885 5.71415 3.93468 5.53998 3.76052C5.36581 3.58634 5.19163 3.41216 5.01745 3.23611C4.89759 3.11625 4.77814 2.99597 4.65869 2.87569C4.41981 2.63514 4.18092 2.39459 3.93871 2.15737C3.35065 1.58429 2.6165 1.58429 2.03218 2.16112C1.85236 2.33795 1.67553 2.51658 1.49881 2.69509L1.49879 2.69511L1.49879 2.69511C1.23382 2.96277 0.969126 3.23016 0.694993 3.49081C0.271737 3.8916 0.0582363 4.38228 0.0132888 4.95536C-0.0578782 5.88802 0.170605 6.76824 0.492729 7.62599C1.15196 9.40142 2.15579 10.9783 3.37312 12.4241C5.01745 14.3794 6.98016 15.9263 9.27623 17.0425C10.31 17.5444 11.3813 17.9302 12.5462 17.9939C13.3477 18.0388 14.0444 17.8366 14.6025 17.2111C14.8536 16.9304 15.1258 16.6659 15.3977 16.4017L15.3977 16.4016C15.5395 16.2639 15.6812 16.1261 15.8198 15.9862C16.4191 15.3794 16.4229 14.6453 15.8273 14.046C15.1157 13.3306 14.4003 12.6189 13.6848 11.9072ZM12.9694 8.92199L14.3516 8.68601C14.1343 7.41625 13.535 6.26634 12.6248 5.3524C11.6622 4.38978 10.4449 3.78298 9.10395 3.5957L8.90918 4.98533C9.94672 5.13141 10.8906 5.59962 11.636 6.345C12.3402 7.04917 12.8009 7.94063 12.9694 8.92199Z"
-            fill="inherit"
-            stroke="none"
-          ></path>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" id="person"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.869 8.34A9.976 9.976 0 0 1 7.5 7.988c.916 0 1.793.132 2.605.364C12.96 9.168 15 11.21 15 13.016c0 2.59-15 2.7-15 0 0-1.943 2.028-3.899 4.869-4.677zm.392-2.142c.607.506 1.387.81 2.239.81A3.499 3.499 0 0 0 11 3.505 3.502 3.502 0 0 0 7.5 0 3.502 3.502 0 0 0 4 3.504c0 1.083.49 2.051 1.26 2.694zM7.5 5.008c.826 0 1.5-.67 1.5-1.504C9 2.671 8.326 2 7.5 2S6 2.671 6 3.504c0 .834.674 1.505 1.5 1.505zm4.14 6.253c-1.027-.73-2.498-1.272-4.14-1.272-1.675 0-3.148.514-4.16 1.217-.614.428-.966.85-1.153 1.196.164.055.367.113.612.17 1.202.28 2.909.434 4.694.428 1.784-.007 3.495-.172 4.703-.458a7.68 7.68 0 0 0 .566-.155c-.197-.318-.542-.714-1.121-1.126zm1.741.858s-.005.005-.019.014a.193.193 0 0 1 .02-.014zm-11.74.042z"></path>
         </symbol>
-        <symbol
-          viewBox="0 0 1792 1792"
-          id="svg-facebook"
-          fill="inherit"
-          stroke="inherit"
-        >
-          <path
-            d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759H734V905H479V609h255V391q0-186 104-288.5T1115 0q147 0 228 12z"
-            stroke="none"
-          ></path>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" id="favorite"><path d="m8 14-1.015-.935C3.38 9.756 1 7.575 1 4.896 1 2.714 2.694 1 4.85 1 6.068 1 7.237 1.574 8 2.48A4.172 4.172 0 0 1 11.15 1C13.306 1 15 2.714 15 4.896c0 2.678-2.38 4.86-5.985 8.176L8 14z"></path>
         </symbol>
-        <symbol
-          viewBox="0 0 16 16"
-          id="svg-instagram"
-          fill="inherit"
-          stroke="inherit"
-        >
-          <path
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M12 0H4C1.79086 0 0 1.79086 0 4V12C0 14.2091 1.79086 16 4 16H12C14.2091 16 16 14.2091 16 12V4C16 1.79086 14.2091 0 12 0ZM11.2 7.4959C11.2988 8.1617 11.185 8.84167 10.875 9.43911C10.565 10.0365 10.0746 10.521 9.47334 10.8236C8.87212 11.1262 8.19079 11.2316 7.52626 11.1246C6.86173 11.0177 6.24784 10.704 5.7719 10.228C5.29597 9.75209 4.98222 9.1382 4.87529 8.47367C4.76836 7.80914 4.87369 7.12781 5.1763 6.5266C5.4789 5.92538 5.96338 5.43489 6.56082 5.12489C7.15826 4.81489 7.83824 4.70117 8.50403 4.7999C9.18317 4.90061 9.81192 5.21707 10.2974 5.70254C10.7829 6.18802 11.0993 6.81676 11.2 7.4959ZM12.8 4.39995C13.4628 4.39995 14 3.86269 14 3.19995C14 2.53721 13.4628 1.99995 12.8 1.99995C12.1373 1.99995 11.6 2.53721 11.6 3.19995C11.6 3.86269 12.1373 4.39995 12.8 4.39995Z"
-            fill="inherit"
-            stroke="none"
-          ></path>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="basket"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 0a1 1 0 1 0 0 2h2.349l2.202 9.853c.124.61.456 1.16.94 1.552A2.663 2.663 0 0 0 8.209 14h8.082a2.663 2.663 0 0 0 1.718-.595c.488-.396.821-.95.942-1.566l.003-.014 1.03-5.646A1 1 0 0 0 19 5H6.069L5.126.782A1 1 0 0 0 4.15 0H1zm6.505 11.427L6.515 7h11.286l-.813 4.457a.684.684 0 0 1-.238.394.663.663 0 0 1-.43.149H8.18a.663.663 0 0 1-.43-.149.684.684 0 0 1-.24-.399l-.002-.012-.003-.013z"></path><path d="M6 17.75a1.75 1.75 0 1 1 3.5 0 1.75 1.75 0 0 1-3.5 0zM15 17.75a1.75 1.75 0 1 1 3.5 0 1.75 1.75 0 0 1-3.5 0z"></path>
         </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.992 15" id="search"><path d="m14.7 13.3-3.81-3.83A5.93 5.93 0 0 0 12 6c0-3.31-2.69-6-6-6S0 2.69 0 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3s.52-.09.7-.3a.996.996 0 0 0 0-1.41zM6 10.7c-2.59 0-4.7-2.11-4.7-4.7S3.41 1.3 6 1.3s4.7 2.11 4.7 4.7-2.11 4.7-4.7 4.7z" fill-rule="evenodd"></path>
+        </symbol>
+
+
       </svg>
     </div>
-    
+  
+    <div class="page">
+      <div class="header">
+          <div class="container header__content">
+            <div class="header__inner">
+              <div class="header__barIcon">
+                <svg class="icon header__burger-icon"><use xlink:href="#three-bars"></use></svg>
+              </div>
+              <div class="header__logo">
+                <img class="header__logo-img" src="img/lenta_logo.svg" alt="logo">
+              </div>
+              <form class="header__form">
+                <div class="header__form-control">
+                  <ul class="header__form-list">
+                    <li class="header__form-list-item">
+                      <div class="header__form-btn">
+                        <svg class="icon header__form-burger-icon">
+                          <use xlink:href="#three-bars"></use>
+                        </svg>
+                        <span>каталог</span>
+                      </div>
+                      <ul class="header__form-sublist">
+                        <li class="header__form-subitem">
+                          <div class="header__catalog">
+
+                          </div>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos velit doloremque culpa recusandae perferendis qui minima. Quos debitis itaque quas at quod aliquid provident ipsa repellat, velit corporis corrupti ipsum.
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="header__form-input">
+                  <input class="header__input" type="text" placeholder="Поиск в каталоге и на сайте">
+                  <svg class="icon header__form-bar-icon">
+                    <use xlink:href="#search"></use>
+                  </svg>
+                </div>
+              </form>
+              <div class="header__icons">
+                <svg class="icon header__search-bar-icon">
+                  <use xlink:href="#search"></use>
+                </svg>
+                <span>
+                  <svg class="icon header__person-icon">
+                    <use xlink:href="#person"></use>
+                  </svg>
+                  <span>Войти</span>
+                </span>
+                <span class="header__basket header__basket--favorite" inCart="12">
+                  <svg class="icon header__favorite-icon">
+                    <use xlink:href="#favorite"></use>
+                  </svg>
+                </span>
+                <span class="header__basket" inCart="12">
+                  <svg class="icon header__basket-icon">
+                    <use xlink:href="#basket"></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
 </body>
 </html>
