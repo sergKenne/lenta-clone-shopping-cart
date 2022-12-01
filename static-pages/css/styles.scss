@@ -65,11 +65,38 @@ html {
   margin: 0 auto;
 }
 
+//COMPONENTS
 .icon {
   fill: #ffffff;
   width: 16px;
   height: 16px;
   cursor: pointer;
+}
+
+.breadcrumbs {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    color: #555555;
+    &:last-child  {
+      color: #c4c4cc;
+    }
+    &:last-child svg  {
+      display: none;
+    }
+  }
+  &__item-svg {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px 0 6px;
+    fill: #9d9d9d;
+  }
+}
+
+.page {
+  padding-top: 72px;
 }
 
 .header {
@@ -78,6 +105,7 @@ html {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 999;
  // padding: 0 16px;
   &__content {
     background: #003c96;
@@ -164,8 +192,8 @@ html {
     font-family: 'Gilroy',Arial,'Helvetica Neue',Helvetica,sans-serif;
     padding-top: 3px;
   }
-  &__form-bar-icon {
-    fill: #000000;
+  &__form-search-icon {
+    fill: #003c96;
     position: absolute;
     right: 16px;
     top: 10px;
@@ -225,6 +253,186 @@ html {
   }
 }
 
+//CATALOG
+.catalog {
+
+  &__breadcrumbs{
+    padding-top: 21px;
+  }
+  &__slider {
+    margin: 20px 0;
+    &:hover .owl-theme .owl-nav [class*=owl-] {
+      display: flex;
+    }
+    .owl-theme .owl-nav [class*=owl-] {
+      background: #ffffff;
+      color: #003c96;
+      font-size: 3.5rem;
+      padding: 0;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      //display: flex;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background: #99b1d5;
+        color: #ffffff;
+      }
+    }
+    .owl-prev {
+      position: absolute;
+      top: 35%;
+      left: 20px;
+      span {
+        transform: translate(-1px, -2px);
+      }
+    }
+    .owl-next {
+      position: absolute;
+      top: 35%;
+      right: 20px;
+      span {
+        transform: translate(0px, -2px);
+      }
+    }
+    .owl-dots {
+      position: absolute;
+      bottom: 7px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    margin-bottom: 40px;
+  }
+  &__grid-item {
+    min-height: 198px;
+    border-radius: 4px;
+    color: #555;
+    border: 1px solid #e6e6e6;
+    &:hover {
+      box-shadow: 0 2px 15px rgba(0, 0, 0,0.1);
+      z-index: 1;
+    }
+  }
+  &__grid-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 18px 25px;
+    cursor: pointer;
+
+  }
+  &__grid-img {
+    margin-bottom: 16px;
+  }
+  &__grid-title {
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+
+// FOOTER
+.footer {
+
+  &__content {
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin: 0 auto 25px;
+    padding: 44px 46px 36px;
+  } 
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+  &__list-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px 0 40px;
+    background-color: #f6f6f6;
+    &:last-child {
+      flex: 0 0 440px;
+    }
+  }
+  &__list-title {
+    padding: 0;
+    padding-top: 2px;
+    border: none;
+    text-transform: none;
+    color: #555;
+    font-weight: 700;
+    margin: 0 0 5px;
+    &:hover {
+      color: #003c96;
+    }
+  }
+  &__list-link {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.33;
+    border-bottom: none;
+    padding: 7px 0;
+    text-decoration: none;
+    &:hover {
+      color: #003c96;
+    }
+  }
+  &__app {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  &__app-btn {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    border-radius: 26px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #111;
+    text-transform: none;
+    background-color: transparent;
+    border: 1px solid #e6e6e6;
+    min-width: 124px;
+    max-width: 124px;
+    transition: border-color .2s;
+    &:hover {
+      border-color: #555
+    }
+  }
+  &__mobile-app-icon{
+    margin-right: 12px;
+    &--store {
+      fill: #000;
+    }
+  }
+  &__social {
+    margin-top: 40px;
+    text-align: center;
+    color: #555;
+    font-weight: 700;
+  }
+  &__social-nav {
+    margin-top: 20px;
+  }
+  &__social-link {
+    text-decoration: none;
+  }
+  &__social-icon {
+    width: 36px;
+    height: 36px;
+    margin: 0 10px;
+  }
+}
 
 
 
