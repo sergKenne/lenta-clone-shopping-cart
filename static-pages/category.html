@@ -31,7 +31,18 @@
         </symbol>
         <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 85" id="appgallery"><path fill-rule="evenodd" clip-rule="evenodd" d="M61.4 0H24.2C6.7 0 .3 6.4.3 23.9v37.2C.3 78.6 6.7 85 24.2 85h37.2c17.5 0 23.9-6.4 23.9-23.9V23.9C85.3 6.4 78.9 0 61.4 0z" fill="#C91430"></path><path d="M17.1 42.6h2.3v11.1h-2.3v-4.5H12v4.5H9.7V42.6H12v4.5h5.1v-4.5zm12.7 6.3c0 1.8-.9 2.8-2.5 2.8s-2.5-1-2.5-2.9v-6.3h-2.3v6.4c0 3.1 1.7 4.9 4.8 4.9 3.1 0 4.8-1.8 4.8-5v-6.3h-2.3v6.4zm26.1 1.3-2.5-7.6h-1.8l-2.5 7.6-2.5-7.6h-2.4l3.9 11.1H50l2.5-7.3 2.5 7.3h1.9l3.9-11.1h-2.3l-2.6 7.6zm8.8-1.3h4.1v-2h-4.1v-2.3h6v-2h-8.2v11.1h8.4v-2h-6.2v-2.8zm8.9 4.8h2.2V42.6h-2.2v11.1zm-37.1-2.3-1 2.3h-2.3l4.9-11.1h2L45 53.7h-2.4l-1-2.3h-5.1zm.8-2h3.4l-1.7-4-1.7 4zM42.8 28.4c-7.8 0-14.2-6.4-14.2-14.2h2c0 6.7 5.5 12.2 12.2 12.2 6.7 0 12.2-5.5 12.2-12.2h2c-.1 7.9-6.4 14.2-14.2 14.2z" fill="#fff"></path>
         </symbol>
-
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" fill="none" id="filter"><path d="M1 1.934C1 1.418 1.418 1 1.934 1h14.127a.936.936 0 0 1 .678 1.581l-4.906 5.15a3 3 0 0 0-.828 2.07v4.469L7.01 15.62V9.804a3 3 0 0 0-.83-2.073L1.258 2.58A.934.934 0 0 1 1 1.934z" stroke="#9D9D9D" stroke-width="2"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 15" id="sorting"><path fill="none" d="M4.714 14V1m0 0L1 4.714M4.714 1 8.43 4.714M14.929 1v13m0 0 3.714-3.714M14.929 14l-3.715-3.714" stroke="#9D9D9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 12" id="navigation"><rect width="16" height="2" rx=".5"></rect><rect x="3" y="5" width="13" height="2" rx=".5"></rect><rect x="3" y="10" width="13" height="2" rx=".5"></rect>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" id="caret-bottom"><path d="m0 2 4 4 4-4H0z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 7" id="chevron-top"><path d="M10.59 6 6 1.673 1.41 6 0 4.668 6-1l6 5.668z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="check-box"><path d="M16 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM7 14 2 9l1.41-1.41L7 11.17l7.59-7.59L16 5l-9 9z"></path>
+        </symbol>
       </svg>
     </div>
   
@@ -122,10 +133,211 @@
                 <img src="img/slide2.jpg" alt="">
                 <img src="img/slide3.jpg" alt="">
                 <img src="img/slide4.jpg" alt="">
+                <img src="img/slide5.png" alt="">
             </div>
           </div>
           <div class="category">
-            
+            <h2 class="category__title">Текстиль для дома</h2>
+            <nav class="category__nav-btn">
+                <div class="category__left-btn">
+                    <button class="navbtn">
+                        <svg class="icon navbtn__svg"><use href="#navigation"></use></svg>
+                        <span>Категории</span>
+                    </button>
+                    <button class="navbtn">
+                        <svg class="icon navbtn__svg"><use href="#filter"></use></svg>
+                        <span>Фильтры</span>
+                    </button>
+                </div>
+                <button class="navbtn category__right-btn">
+                    <!-- <svg class="icon"><use href="#navigation"></use></svg> -->
+                    <!-- <span>По популярности</span> -->
+                    <select name="" id="">
+                        <option value="filter1">fliter-1 loremertyy </option>
+                        <option value="filter1">fliter-2</option>
+                        <option value="filter1">fliter-3</option>
+                        <option value="filter1">fliter-4</option>
+                    </select>
+                    <svg class="icon navbtn__dropdown-icon" style="width: 10px; height: 10px; fill: #555">
+                        <use href="#caret-bottom"></use>
+                    </svg>
+                </button>
+            </nav>
+            <div class="category__inner">
+                <div class="category__content">
+                    <div class="filter category__filter">
+                        <div class="filter__card">
+                            <div class="filter__header">
+                                <img src="img/filter-header.jpg" alt="" class="filter__header-img">
+                                <h5 class="filter__title filter__title--head">Текстиль для дома</h5>
+                            </div>
+                            <h5 class="filter__title">Для ванной комнаты и туалета</h5>
+                            <nav class="filter__nav">
+                                <a href="#" class="filter__nav-link">Коврики для ванной</a>
+                                <a href="#" class="filter__nav-link">Шторы для ванной</a>
+                                <a href="#" class="filter__nav-link">Другой детский текстиль</a>
+                            </nav>
+                            <h5 class="filter__title">Для ванной комнаты и туалета</h5>
+                            <nav class="filter__nav">
+                                <a href="#" class="filter__nav-link">Коврики для ванной</a>
+                                <a href="#" class="filter__nav-link">Шторы для ванной</a>
+                                <a href="#" class="filter__nav-link">Другой детский текстиль</a>
+                            </nav>
+                            <h5 class="filter__title">Для ванной комнаты и туалета</h5>
+                            <nav class="filter__nav">
+                                <a href="#" class="filter__nav-link">Коврики для ванной</a>
+                                <a href="#" class="filter__nav-link">Шторы для ванной</a>
+                                <a href="#" class="filter__nav-link">Другой детский текстиль</a>
+                            </nav>
+                        </div>
+                        <div class="filter__card">
+                            <div class="filter__card-top">
+                                <span class="filter__card-name">Цена</span>
+                                <div class="filter__card-top-right">
+                                    <span class="filter__card-badge">очистить</span>
+                                    <svg class="icon" style="width: 12px; height: 12px; fill:#9d9d9d;">
+                                        <use href="#chevron-top"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="filter__range">
+                                <div class="filter__range-counter">
+                                    <input type="text" class="filter__input" maxlength="8" value="0">
+                                    <i>-</i>
+                                    <input type="text" class="filter__input" maxlength="8" value="2000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__card">
+                            <div class="filter__card-top">
+                                <span class="filter__card-name">Бренд</span>
+                                <div class="filter__card-top-right">
+                                    <span class="filter__card-badge">очистить</span>
+                                    <svg class="icon" style="width: 12px; height: 12px; fill:#9d9d9d;">
+                                        <use href="#chevron-top"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="filter__checkbox">
+                                <label class="filter__checkbox-label">
+                                    <input type="checkbox" class="filter__checkbox-input">
+                                    <span class="filter__checkbox-icon">
+                                        <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
+                                    </span>
+                                    <span>ARMANIE</span>
+                                    <span class="filter__checkbox-count">36</span>
+                                </label>
+                                <label class="filter__checkbox-label">
+                                    <input type="checkbox" class="filter__checkbox-input">
+                                    <span class="filter__checkbox-icon">
+                                        <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
+                                    </span>
+                                    <span>ARMANIE</span>
+                                    <span class="filter__checkbox-count">36</span>
+                                </label>
+                                <label class="filter__checkbox-label">
+                                    <input type="checkbox" class="filter__checkbox-input">
+                                    <span class="filter__checkbox-icon">
+                                        <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
+                                    </span>
+                                    <span>ARMANIE</span>
+                                    <span class="filter__checkbox-count">36</span>
+                                </label>
+                                <label class="filter__checkbox-label">
+                                    <input type="checkbox" class="filter__checkbox-input">
+                                    <span class="filter__checkbox-icon">
+                                        <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
+                                    </span>
+                                    <span>ARMANIE</span>
+                                    <span class="filter__checkbox-count">36</span>
+                                </label>
+                                <div class="filter__show-more">Показать ещё</div>
+                            </div>
+                        </div>
+                        <div class="filter__card">
+                            <div class="filter__card-top">
+                                <span class="filter__card-name">Страна производителя</span>
+                                <div class="filter__card-top-right">
+                                    <span class="filter__card-badge">очистить</span>
+                                    <svg class="icon" style="width: 12px; height: 12px; fill:#9d9d9d;">
+                                        <use href="#chevron-top"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="filter__checkbox">
+                                <label class="filter__checkbox-label">
+                                    <input type="checkbox" class="filter__checkbox-input">
+                                    <span class="filter__checkbox-icon">
+                                        <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
+                                    </span>
+                                    <span>ARMANIE</span>
+                                    <span class="filter__checkbox-count">36</span>
+                                </label>
+                                <label class="filter__checkbox-label">
+                                    <input type="checkbox" class="filter__checkbox-input">
+                                    <span class="filter__checkbox-icon">
+                                        <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
+                                    </span>
+                                    <span>ARMANIE</span>
+                                    <span class="filter__checkbox-count">36</span>
+                                </label>
+                                <label class="filter__checkbox-label">
+                                    <input type="checkbox" class="filter__checkbox-input">
+                                    <span class="filter__checkbox-icon">
+                                        <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
+                                    </span>
+                                    <span>ARMANIE</span>
+                                    <span class="filter__checkbox-count">36</span>
+                                </label>
+                                <label class="filter__checkbox-label">
+                                    <input type="checkbox" class="filter__checkbox-input">
+                                    <span class="filter__checkbox-icon">
+                                        <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
+                                    </span>
+                                    <span>ARMANIE</span>
+                                    <span class="filter__checkbox-count">36</span>
+                                </label>
+                                <div class="filter__show-more">Показать ещё</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__products">
+                        <div class="category__inner-prods">
+                            <div class="card">
+                                <a href="" class="card__img-link">
+                                    <img src="img/prod.png" alt="" class="card__img">
+                                </a>
+                                <div class="card__body">
+                                    <h5 class="card__title">Коврик для ванной HOMECLUB Aquamarine 50х80см, шенилл, в ассортименте Арт. GM003-4</h5>
+                                    <div class="card__rating">
+                                        <span>Китай</span>
+                                    </div>
+                                    <div class="card__prices">
+                                        <span>По карте</span>
+                                        <div>
+                                            <span class="card__price-big">109</span>
+                                            <small class="card__price-small">00</small>
+                                            <span class="card__price-icon">₽</span>
+                                        </div>
+                                    </div>
+                                    <div class="card__prices">
+                                        <span>Обычная цена</span>
+                                        <div>
+                                            <span class="card__price-big card__price-big--old">153</span>
+                                            <small class="card__price-small card__price-small--old">89</small>
+                                            <span class="card__price-icon card__price-icon--old">₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__buttons">
+                                    <button class="btn card__btn">В корзину</button>
+                                    <button class="btn card__btn">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
           </div>
         </div>
       </div>
