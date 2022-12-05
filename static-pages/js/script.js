@@ -1,7 +1,7 @@
 
 $('.owl-carousel').owlCarousel({
     loop: true,
-    margin: 10,
+    //margin: 10,
     nav: true,
     //dots: false,
     responsive: {
@@ -15,4 +15,10 @@ $('.owl-carousel').owlCarousel({
             items: 1,
         },
     },
+});
+
+//$('.bxslider').zoom({ on:'click' }); 
+$('.bxslider').bxSlider({
+  pagerCustom: '.bx-pager',
+  //auto:true
 });

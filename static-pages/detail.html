@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fonts/stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" /> -->
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="spread-svg">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 14" id="three-bars"><rect y="12" width="16" height="2" rx="1"></rect><rect y="6" width="16" height="2" rx="1"></rect><rect width="16" height="2" rx="1"></rect>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" id="person"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.869 8.34A9.976 9.976 0 0 1 7.5 7.988c.916 0 1.793.132 2.605.364C12.96 9.168 15 11.21 15 13.016c0 2.59-15 2.7-15 0 0-1.943 2.028-3.899 4.869-4.677zm.392-2.142c.607.506 1.387.81 2.239.81A3.499 3.499 0 0 0 11 3.505 3.502 3.502 0 0 0 7.5 0 3.502 3.502 0 0 0 4 3.504c0 1.083.49 2.051 1.26 2.694zM7.5 5.008c.826 0 1.5-.67 1.5-1.504C9 2.671 8.326 2 7.5 2S6 2.671 6 3.504c0 .834.674 1.505 1.5 1.505zm4.14 6.253c-1.027-.73-2.498-1.272-4.14-1.272-1.675 0-3.148.514-4.16 1.217-.614.428-.966.85-1.153 1.196.164.055.367.113.612.17 1.202.28 2.909.434 4.694.428 1.784-.007 3.495-.172 4.703-.458a7.68 7.68 0 0 0 .566-.155c-.197-.318-.542-.714-1.121-1.126zm1.741.858s-.005.005-.019.014a.193.193 0 0 1 .02-.014zm-11.74.042z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" id="favorite"><path d="m8 14-1.015-.935C3.38 9.756 1 7.575 1 4.896 1 2.714 2.694 1 4.85 1 6.068 1 7.237 1.574 8 2.48A4.172 4.172 0 0 1 11.15 1C13.306 1 15 2.714 15 4.896c0 2.678-2.38 4.86-5.985 8.176L8 14z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="basket"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 0a1 1 0 1 0 0 2h2.349l2.202 9.853c.124.61.456 1.16.94 1.552A2.663 2.663 0 0 0 8.209 14h8.082a2.663 2.663 0 0 0 1.718-.595c.488-.396.821-.95.942-1.566l.003-.014 1.03-5.646A1 1 0 0 0 19 5H6.069L5.126.782A1 1 0 0 0 4.15 0H1zm6.505 11.427L6.515 7h11.286l-.813 4.457a.684.684 0 0 1-.238.394.663.663 0 0 1-.43.149H8.18a.663.663 0 0 1-.43-.149.684.684 0 0 1-.24-.399l-.002-.012-.003-.013z"></path><path d="M6 17.75a1.75 1.75 0 1 1 3.5 0 1.75 1.75 0 0 1-3.5 0zM15 17.75a1.75 1.75 0 1 1 3.5 0 1.75 1.75 0 0 1-3.5 0z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.992 15" id="search"><path d="m14.7 13.3-3.81-3.83A5.93 5.93 0 0 0 12 6c0-3.31-2.69-6-6-6S0 2.69 0 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3s.52-.09.7-.3a.996.996 0 0 0 0-1.41zM6 10.7c-2.59 0-4.7-2.11-4.7-4.7S3.41 1.3 6 1.3s4.7 2.11 4.7 4.7-2.11 4.7-4.7 4.7z" fill-rule="evenodd"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" id="chevron-right-regular"><path d="M24.707 38.101 4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" id="app-store"><path d="m6.607 10.457 4.582-8.278c.063-.114.126-.227.183-.345.052-.106.095-.213.124-.33a1.2 1.2 0 0 0-.05-.732 1.133 1.133 0 0 0-.464-.552 1.063 1.063 0 0 0-1.325.178c-.082.083-.15.176-.212.276-.07.11-.132.224-.194.338l-.29.522-.29-.523C8.608.898 8.546.784 8.477.674c-.061-.1-.132-.192-.213-.277A1.063 1.063 0 0 0 6.94.22c-.21.129-.374.322-.465.552a1.19 1.19 0 0 0-.049.732c.029.117.072.224.123.33.057.118.12.23.183.345l.936 1.69-3.647 6.587h-2.5c-.124 0-.25 0-.376.007a1.509 1.509 0 0 0-.336.054c-.232.067-.436.21-.583.41a1.181 1.181 0 0 0-.001 1.393c.148.2.351.342.584.41.111.033.222.047.336.054.125.007.252.007.377.007h9.823c.013-.027.044-.097.075-.202.312-1.062-.462-2.133-1.526-2.133H6.607zm-4.272 2.716-.594 1.125c-.062.117-.124.232-.18.353a1.771 1.771 0 0 0-.12.34c-.06.25-.043.512.048.752.091.238.251.437.456.566a.996.996 0 0 0 .675.147c.236-.032.45-.148.62-.33.081-.086.147-.181.208-.283.068-.113.129-.23.19-.347l.862-1.632c-.067-.112-.71-1.102-2.165-.691zm15.44-2.255a1.102 1.102 0 0 0-.585-.404 1.524 1.524 0 0 0-.336-.054c-.126-.007-.251-.007-.377-.007h-2.491L10.693 4.59a3.048 3.048 0 0 0-.806 1.649c-.121.775.023 1.567.409 2.25l3.956 7.045c.063.112.125.225.194.333.063.097.13.19.212.273.173.174.393.285.634.317.24.032.482-.018.691-.142.21-.126.374-.318.466-.545.094-.23.11-.482.05-.723a1.625 1.625 0 0 0-.124-.325c-.056-.117-.12-.228-.183-.34l-.912-1.625h1.197c.126 0 .251 0 .377-.006.114-.007.225-.022.336-.053.234-.067.44-.21.585-.406.147-.199.226-.44.225-.687 0-.247-.078-.488-.225-.687z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="google-play-color"><path d="m6.094 21.465 10.953-6.288-2.344-2.344-8.61 8.632z" fill="#F2364D"></path><path d="m20.433 10.8-2.298-1.33-2.563 2.517 2.563 2.515 2.344-1.33c.702-.557.702-1.813-.046-2.371z" fill="#FECB2F"></path><path d="m14.701 11.14-8.61-8.632 10.954 6.288-2.344 2.344z" fill="#27EE7B"></path><path d="M3.846 2C3.34 2.265 3 2.749 3 3.377V20.59c0 .628.34 1.112.846 1.377l10.01-9.986L3.846 2z" fill="#24D2FD"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 85" id="appgallery"><path fill-rule="evenodd" clip-rule="evenodd" d="M61.4 0H24.2C6.7 0 .3 6.4.3 23.9v37.2C.3 78.6 6.7 85 24.2 85h37.2c17.5 0 23.9-6.4 23.9-23.9V23.9C85.3 6.4 78.9 0 61.4 0z" fill="#C91430"></path><path d="M17.1 42.6h2.3v11.1h-2.3v-4.5H12v4.5H9.7V42.6H12v4.5h5.1v-4.5zm12.7 6.3c0 1.8-.9 2.8-2.5 2.8s-2.5-1-2.5-2.9v-6.3h-2.3v6.4c0 3.1 1.7 4.9 4.8 4.9 3.1 0 4.8-1.8 4.8-5v-6.3h-2.3v6.4zm26.1 1.3-2.5-7.6h-1.8l-2.5 7.6-2.5-7.6h-2.4l3.9 11.1H50l2.5-7.3 2.5 7.3h1.9l3.9-11.1h-2.3l-2.6 7.6zm8.8-1.3h4.1v-2h-4.1v-2.3h6v-2h-8.2v11.1h8.4v-2h-6.2v-2.8zm8.9 4.8h2.2V42.6h-2.2v11.1zm-37.1-2.3-1 2.3h-2.3l4.9-11.1h2L45 53.7h-2.4l-1-2.3h-5.1zm.8-2h3.4l-1.7-4-1.7 4zM42.8 28.4c-7.8 0-14.2-6.4-14.2-14.2h2c0 6.7 5.5 12.2 12.2 12.2 6.7 0 12.2-5.5 12.2-12.2h2c-.1 7.9-6.4 14.2-14.2 14.2z" fill="#fff"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" fill="none" id="filter"><path d="M1 1.934C1 1.418 1.418 1 1.934 1h14.127a.936.936 0 0 1 .678 1.581l-4.906 5.15a3 3 0 0 0-.828 2.07v4.469L7.01 15.62V9.804a3 3 0 0 0-.83-2.073L1.258 2.58A.934.934 0 0 1 1 1.934z" stroke="#9D9D9D" stroke-width="2"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 15" id="sorting"><path fill="none" d="M4.714 14V1m0 0L1 4.714M4.714 1 8.43 4.714M14.929 1v13m0 0 3.714-3.714M14.929 14l-3.715-3.714" stroke="#9D9D9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 12" id="navigation"><rect width="16" height="2" rx=".5"></rect><rect x="3" y="5" width="13" height="2" rx=".5"></rect><rect x="3" y="10" width="13" height="2" rx=".5"></rect>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" id="caret-bottom"><path d="m0 2 4 4 4-4H0z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 7" id="chevron-top"><path d="M10.59 6 6 1.673 1.41 6 0 4.668 6-1l6 5.668z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="check-box"><path d="M16 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM7 14 2 9l1.41-1.41L7 11.17l7.59-7.59L16 5l-9 9z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 14" id="rating-star"><path d="M14.755 6.03c.471-.4.222-1.162-.398-1.214l-4.044-.34a.701.701 0 0 1-.586-.417L8.143.42C7.9-.14 7.096-.14 6.853.42L5.268 4.067a.701.701 0 0 1-.586.417l-4.038.334c-.62.051-.87.814-.398 1.213l3.058 2.585a.685.685 0 0 1 .226.683l-.92 3.848c-.142.594.511 1.065 1.044.751l3.483-2.051a.711.711 0 0 1 .721 0l3.487 2.053c.531.313 1.184-.157 1.043-.751l-.915-3.85a.685.685 0 0 1 .226-.682l3.056-2.588z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="plus"><path d="M9 1a1 1 0 1 0-2 0v6H1a1 1 0 0 0 0 2h6v6a1 1 0 1 0 2 0V9h6a1 1 0 1 0 0-2H9V1z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 2" id="minus"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 1a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" id="add-favourite"><path d="M21.305 2.77C20.273 1.646 18.782 1 17.215 1c-1.567 0-3.058.645-4.09 1.77l-.535.564a.802.802 0 0 1-.59.254.803.803 0 0 1-.59-.254l-.541-.563C9.836 1.645 8.345 1 6.779 1 5.21 1 3.72 1.645 2.687 2.77.418 5.248.442 8.952 2.743 11.4l8.73 7.407c.3.257.755.257 1.054 0l8.73-7.407c2.307-2.448 2.327-6.158.048-8.63z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="clear-field"><path d="M14 1.41 12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7z"></path>
+        </symbol>
+      </svg>
+      
+    </div>
+  
+    <div class="page">
+      <div class="header">
+          <div class="container header__content">
+            <div class="header__inner">
+              <div class="header__barIcon">
+                <svg class="icon header__burger-icon"><use xlink:href="#three-bars"></use></svg>
+              </div>
+              <div class="header__logo">
+                <img class="header__logo-img" src="img/lenta_logo.svg" alt="logo">
+              </div>
+              <form class="header__form">
+                <div class="header__form-control">
+                  <ul class="header__form-list">
+                    <li class="header__form-list-item">
+                      <div class="header__form-btn">
+                        <svg class="icon header__form-burger-icon">
+                          <use xlink:href="#three-bars"></use>
+                        </svg>
+                        <span>каталог</span>
+                      </div>
+                      <ul class="header__form-sublist">
+                        <li class="header__form-subitem">
+                          <div class="header__catalog">
+
+                          </div>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos velit doloremque culpa recusandae perferendis qui minima. Quos debitis itaque quas at quod aliquid provident ipsa repellat, velit corporis corrupti ipsum.
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="header__form-input">
+                  <input class="header__input" type="text" placeholder="Поиск в каталоге и на сайте">
+                  <svg class="icon header__form-search-icon">
+                    <use xlink:href="#search"></use>
+                  </svg>
+                </div>
+              </form>
+              <div class="header__icons">
+                <svg class="icon header__search-bar-icon">
+                  <use xlink:href="#search"></use>
+                </svg>
+                <span>
+                  <svg class="icon header__person-icon">
+                    <use xlink:href="#person"></use>
+                  </svg>
+                  <span>Войти</span>
+                </span>
+                <span class="header__basket header__basket--favorite" inCart="12">
+                  <svg class="icon header__favorite-icon">
+                    <use xlink:href="#favorite"></use>
+                  </svg>
+                </span>
+                <span class="header__basket" inCart="12">
+                  <svg class="icon header__basket-icon">
+                    <use xlink:href="#basket"></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- Detail -->
+      <div class="detail">
+        <div class="container detail__inner">
+          <nav class="breadcrumbs catalog__breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__item-text">Главная</span>
+                <svg class="icon breadcrumbs__item-svg"><use href="#chevron-right-regular"></use></svg>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__item-text">Каталог</span>
+                <svg class="icon breadcrumbs__item-svg"><use href="#chevron-right-regular"></use></svg>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__item-text">Мясо, птица, колбаса</span>
+                <svg class="icon breadcrumbs__item-svg"><use href="#chevron-right-regular"></use></svg>
+              </li>
+            </ul>
+          </nav>
+          <div class="detail__content">
+            <div class="card detail__card">
+                <div class="card__slider">
+                    <div class="slider">
+                        <ul class="bxslider">
+                            <li><img src="https://lenta.servicecdn.ru/globalassets/1/-/58/48/10/379936.png?preset=fulllossywhite" /></li>
+                            <li><img src="https://lenta.servicecdn.ru/globalassets/1/-/58/48/10/379936.png?preset=fulllossywhite" /></li>
+                            <li><img src="https://lenta.servicecdn.ru/globalassets/1/-/58/48/10/379936.png?preset=fulllossywhite" /></li>
+                        </ul>
+                        <div class="bx-pager">
+                            <a data-slide-index="0" href=""><img src="https://lenta.servicecdn.ru/globalassets/1/-/58/48/10/379936.png?preset=fulllossywhite" /></a>
+                            <a data-slide-index="1" href=""><img src="https://lenta.servicecdn.ru/globalassets/1/-/58/48/10/379936.png?preset=fulllossywhite" /></a>
+                            <a data-slide-index="2" href=""><img src="https://lenta.servicecdn.ru/globalassets/1/-/58/48/10/379936.png?preset=fulllossywhite" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__info">
+                    <div class="card__body">
+                        <h5 class="card__title card__title--detail">Колбаса сырокопченая ОКРАИНА Зернистая, весовая, Россия</h5>
+                        <div class="card__rating card__rating--detail">
+                            <span>арт.350326</span>
+                            <svg class="icon card__rating-icon">
+                                <use href="#rating-star"></use>
+                            </svg>
+                            <span class="card__rating-value">4.8</span>
+                        </div>
+                        <div class="card__wrap-prices">
+                            <div class="card__prices card__prices--detail">
+                                <span>Обычная цена</span>
+                                <div>
+                                    <span class="card__price-big card__price-big--old-detail">153</span>
+                                    <small class="card__price-small card__price-small--old-detail">89</small>
+                                    <span class="card__price-icon card__price-icon--old-detail">₽</span>
+                                </div>
+                            </div>
+                            <div class="card__prices card__prices--detail">
+                                <span>По карте</span>
+                                <div>
+                                    <span class="card__price-big card__price-big--detail">1094</span>
+                                    <small class="card__price-small card__price-small--detail">00</small>
+                                    <span class="card__price-icon card__price-icon--detail">₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__buttons">
+                        <!-- <button class="btn card__btn card__btn--detail">В корзину</button> -->
+                        <button class="btn btn--control card__btn card__btn--detail">
+                            <span class="btn__icon btn__icon--detail">
+                                <svg class="icon btn__control-icon">
+                                    <use href="#minus"></use>
+                                </svg>
+                            </span>
+                            <input class="btn__input btn__input--detail" type="text" placeholder="1 ШТ"/>
+                            <span class="btn__icon btn__icon--detail">
+                                <svg class="icon btn__control-icon">
+                                    <use href="#plus"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <p class="card__description">Сырокопченая колбаса ОКРАИНА Зернистая производится из филе куриной грудки, свинины и мелко рубленного шпика, придающего красивый равномерный...</p>
+                </div>
+                <!-- <div class="card__percent">-47%</div>
+                <svg class="icon card__favorite-icon">
+                    <use href="#add-favourite"></use>
+                </svg> -->
+            </div>
+            <div class="card detail__description">
+                <h6 class="detail__description-title">Характеристики</h6>
+                <ul class="detail__list">
+                    <li class="detail__list-item">
+                        <div class="detail__list-name">
+                            <span>Бренд</span>
+                            <span class="detail__bar"></span>
+                        </div>
+                        <div class="detail__list-value">ОКРАИНА</div>
+                    </li>
+                    <li class="detail__list-item">
+                        <div class="detail__list-name">
+                            <span>Серия</span>
+                            <span class="detail__bar"></span>
+                        </div>
+                        <div class="detail__list-value">Зернистая</div>
+                    </li>
+                    <li class="detail__list-item">
+                        <div class="detail__list-name">
+                            <span>Производитель</span>
+                            <span class="detail__bar"></span>
+                        </div>
+                        <div class="detail__list-value">ООО «МПЗ Окраина»</div>
+                    </li>
+                    <li class="detail__list-item">
+                        <div class="detail__list-name">
+                            <span>Бренд</span>
+                            <span class="detail__bar"></span>
+                        </div>
+                        <div class="detail__list-value">Зернистая</div>
+                    </li>
+                    <li class="detail__list-item">
+                        <div class="detail__list-name">
+                            <span>Страна производителя</span>
+                            <span class="detail__bar"></span>
+                        </div>
+                        <div class="detail__list-value">Россия</div>
+                    </li>
+                    <li class="detail__list-item">
+                        <div class="detail__list-name">
+                            <span>Вид упаковки</span>
+                            <span class="detail__bar"></span>
+                        </div>
+                        <div class="detail__list-value">Стеклянная банка</div>
+                    </li>
+                    <li class="detail__list-item">
+                        <div class="detail__list-name">
+                            <span>Содержание кофеина</span>
+                            <span class="detail__bar"></span>
+                        </div>
+                        <div class="detail__list-value">Да</div>
+                    </li>
+                    <li class="detail__list-item">
+                        <div class="detail__list-name">
+                            <span>Стандарт качества</span>
+                            <span class="detail__bar"></span>
+                        </div>
+                        <div class="detail__list-value">Национальные стандарты</div>
+                    </li>
+                    <li class="detail__list-item">
+                        <div class="detail__list-name">
+                            <span>Как приготовить</span>
+                            <span class="detail__bar"></span>
+                        </div>
+                        <div class="detail__list-value">Положите 1–2 ч.л. кофе в чашку и залейте горячей, но не кипящей водой.</div>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container footer__content">
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <h5 class="footer__list-title">О компании</h5>
+              <a href="#" class="footer__list-link">Информация</a>
+              <a href="#" class="footer__list-link">Магазины</a>
+              <a href="#" class="footer__list-link">Вакансии</a>
+              <a href="#" class="footer__list-link">Контакты</a>
+            </li>
+            <li class="footer__list-item">
+              <h5 class="footer__list-title">Покупателям</h5>
+              <a href="#" class="footer__list-link">Карта покупателя</a>
+              <a href="#" class="footer__list-link">Подарочные карты</a>
+              <a href="#" class="footer__list-link">Лента Онлайн</a>
+              <a href="#" class="footer__list-link">Акции</a>
+              <a href="#" class="footer__list-link">Онлайн-заказы</a>
+              <a href="#" class="footer__list-link">Помощь покупателю</a>
+              <a href="#" class="footer__list-link">Не нашли товар (опрос)</a>
+              <a href="#" class="footer__list-link">Безопасность покупателей</a>
+            </li>
+            <li class="footer__list-item">
+              <h5 class="footer__list-title">Юридическим лицам</h5>
+              <a href="#" class="footer__list-link">Поставщикам</a>
+              <a href="#" class="footer__list-link">Рекламодателям</a>
+              <a href="#" class="footer__list-link">Арендаторам</a>
+              <a href="#" class="footer__list-link">Лента PRO для бизнеса</a>
+              <a href="#" class="footer__list-link">Лента ОПТ</a>
+            </li>
+            <li class="footer__list-item">
+              <h5 class="footer__list-title">Скачайте приложение</h5>
+              <div class="footer__app">
+                <a href="#" class="footer__app-btn">
+                  <svg class="icon footer__mobile-app-icon footer__mobile-app-icon--store"><use xlink:href="#app-store"></use></svg>
+                  <span>App Store</span>
+                </a>
+                <a href="#" class="footer__app-btn">
+                  <svg class="icon footer__mobile-app-icon"><use xlink:href="#google-play-color"></use></svg>
+                  <span>Google Play</span>
+                </a>
+                <a href="#" class="footer__app-btn">
+                  <svg class="icon footer__mobile-app-icon"><use xlink:href="#appgallery"></use></svg>
+                  <span>AppGalery</span>
+                </a>
+              </div>
+              <div class="footer__social">
+                <h4 class="footer__social-title">Мы в социальных сетях</h4>
+                <div class="footer__social-nav">
+                  <a href="#" class="footer__social-link">
+                    <img class="footer__social-icon" src="img/icon_vk2.png" alt="vk">
+                  </a>
+                  <a href="#" class="footer__social-link">
+                    <img class="footer__social-icon" src="img/icon_odnoklassniki2.png" alt="ok">
+                  </a>
+                  <a href="#" class="footer__social-link">
+                    <img class="footer__social-icon" src="img/icon_telegram2.png" alt="">
+                  </a>
+                </div>
+              </div>
+              
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

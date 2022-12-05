@@ -43,7 +43,18 @@
         </symbol>
         <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="check-box"><path d="M16 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM7 14 2 9l1.41-1.41L7 11.17l7.59-7.59L16 5l-9 9z"></path>
         </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 14" id="rating-star"><path d="M14.755 6.03c.471-.4.222-1.162-.398-1.214l-4.044-.34a.701.701 0 0 1-.586-.417L8.143.42C7.9-.14 7.096-.14 6.853.42L5.268 4.067a.701.701 0 0 1-.586.417l-4.038.334c-.62.051-.87.814-.398 1.213l3.058 2.585a.685.685 0 0 1 .226.683l-.92 3.848c-.142.594.511 1.065 1.044.751l3.483-2.051a.711.711 0 0 1 .721 0l3.487 2.053c.531.313 1.184-.157 1.043-.751l-.915-3.85a.685.685 0 0 1 .226-.682l3.056-2.588z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="plus"><path d="M9 1a1 1 0 1 0-2 0v6H1a1 1 0 0 0 0 2h6v6a1 1 0 1 0 2 0V9h6a1 1 0 1 0 0-2H9V1z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 2" id="minus"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 1a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" id="add-favourite"><path d="M21.305 2.77C20.273 1.646 18.782 1 17.215 1c-1.567 0-3.058.645-4.09 1.77l-.535.564a.802.802 0 0 1-.59.254.803.803 0 0 1-.59-.254l-.541-.563C9.836 1.645 8.345 1 6.779 1 5.21 1 3.72 1.645 2.687 2.77.418 5.248.442 8.952 2.743 11.4l8.73 7.407c.3.257.755.257 1.054 0l8.73-7.407c2.307-2.448 2.327-6.158.048-8.63z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="clear-field"><path d="M14 1.41 12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7z"></path>
+        </symbol>
       </svg>
+      
     </div>
   
     <div class="page">
@@ -153,7 +164,7 @@
                     <!-- <svg class="icon"><use href="#navigation"></use></svg> -->
                     <!-- <span>По популярности</span> -->
                     <select name="" id="">
-                        <option value="filter1">fliter-1 loremertyy </option>
+                        <option value="filter1">loremertyy </option>
                         <option value="filter1">fliter-2</option>
                         <option value="filter1">fliter-3</option>
                         <option value="filter1">fliter-4</option>
@@ -161,177 +172,540 @@
                     <svg class="icon navbtn__dropdown-icon" style="width: 10px; height: 10px; fill: #555">
                         <use href="#caret-bottom"></use>
                     </svg>
+                   
                 </button>
+                 <button class="navbtn category__right-btn category__right-btn--mobile">
+                     <svg class="icon navbtn__dropdown-icon-mobile" style=" fill: #555">
+                        <use href="#sorting"></use>
+                    </svg>
+                 </button>
             </nav>
             <div class="category__inner">
                 <div class="category__content">
                     <div class="filter category__filter">
-                        <div class="filter__card">
-                            <div class="filter__header">
-                                <img src="img/filter-header.jpg" alt="" class="filter__header-img">
-                                <h5 class="filter__title filter__title--head">Текстиль для дома</h5>
-                            </div>
-                            <h5 class="filter__title">Для ванной комнаты и туалета</h5>
-                            <nav class="filter__nav">
-                                <a href="#" class="filter__nav-link">Коврики для ванной</a>
-                                <a href="#" class="filter__nav-link">Шторы для ванной</a>
-                                <a href="#" class="filter__nav-link">Другой детский текстиль</a>
-                            </nav>
-                            <h5 class="filter__title">Для ванной комнаты и туалета</h5>
-                            <nav class="filter__nav">
-                                <a href="#" class="filter__nav-link">Коврики для ванной</a>
-                                <a href="#" class="filter__nav-link">Шторы для ванной</a>
-                                <a href="#" class="filter__nav-link">Другой детский текстиль</a>
-                            </nav>
-                            <h5 class="filter__title">Для ванной комнаты и туалета</h5>
-                            <nav class="filter__nav">
-                                <a href="#" class="filter__nav-link">Коврики для ванной</a>
-                                <a href="#" class="filter__nav-link">Шторы для ванной</a>
-                                <a href="#" class="filter__nav-link">Другой детский текстиль</a>
-                            </nav>
-                        </div>
-                        <div class="filter__card">
-                            <div class="filter__card-top">
-                                <span class="filter__card-name">Цена</span>
-                                <div class="filter__card-top-right">
-                                    <span class="filter__card-badge">очистить</span>
-                                    <svg class="icon" style="width: 12px; height: 12px; fill:#9d9d9d;">
-                                        <use href="#chevron-top"></use>
-                                    </svg>
+                        <div class="filter__inner">
+                            <div class="filter__by-category">
+                                <div class="filter__card">
+                                    <div class="filter__top">
+                                        <div class="filter__header">
+                                            <img src="img/filter-header.jpg" alt="" class="filter__header-img">
+                                            <h5 class="filter__title filter__title--head">Текстиль для дома</h5>
+                                        </div>
+                                        <div class="filter__header-mobile">
+                                            <span>Чай, кофе, какао</span>
+                                            <span class="filter__close-icon">
+                                                <svg class="icon" style="width: 14px; height: 14px; fill: #003c96;">
+                                                    <use href="#clear-field"></use>
+                                                </svg>
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                    <h5 class="filter__title">Для ванной комнаты и туалета</h5>
+                                    <nav class="filter__nav">
+                                        <a href="#" class="filter__nav-link">Коврики для ванной</a>
+                                        <a href="#" class="filter__nav-link">Шторы для ванной</a>
+                                        <a href="#" class="filter__nav-link">Другой детский текстиль</a>
+                                    </nav>
+                                    <h5 class="filter__title">Для ванной комнаты и туалета</h5>
+                                    <nav class="filter__nav">
+                                        <a href="#" class="filter__nav-link">Коврики для ванной</a>
+                                        <a href="#" class="filter__nav-link">Шторы для ванной</a>
+                                        <a href="#" class="filter__nav-link">Другой детский текстиль</a>
+                                    </nav>
+                                    <h5 class="filter__title">Для ванной комнаты и туалета</h5>
+                                    <nav class="filter__nav">
+                                        <a href="#" class="filter__nav-link">Коврики для ванной</a>
+                                        <a href="#" class="filter__nav-link">Шторы для ванной</a>
+                                        <a href="#" class="filter__nav-link">Другой детский текстиль</a>
+                                    </nav>
                                 </div>
                             </div>
-                            <div class="filter__range">
-                                <div class="filter__range-counter">
-                                    <input type="text" class="filter__input" maxlength="8" value="0">
-                                    <i>-</i>
-                                    <input type="text" class="filter__input" maxlength="8" value="2000">
+                            <div class="filter__by-price-brend">
+                                <div class="filter__card">
+                                    <div class="filter__card-top">
+                                        <span class="filter__card-name">Цена</span>
+                                        <div class="filter__card-top-right">
+                                            <span class="filter__card-badge">очистить</span>
+                                            <svg class="icon" style="width: 12px; height: 12px; fill:#9d9d9d;">
+                                                <use href="#chevron-top"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="filter__range">
+                                        <div class="filter__range-counter">
+                                            <input type="text" class="filter__input" maxlength="8" value="0">
+                                            <i>-</i>
+                                            <input type="text" class="filter__input" maxlength="8" value="2000">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="filter__card">
-                            <div class="filter__card-top">
-                                <span class="filter__card-name">Бренд</span>
-                                <div class="filter__card-top-right">
-                                    <span class="filter__card-badge">очистить</span>
-                                    <svg class="icon" style="width: 12px; height: 12px; fill:#9d9d9d;">
-                                        <use href="#chevron-top"></use>
-                                    </svg>
+                                <div class="filter__card">
+                                    <div class="filter__card-top">
+                                        <span class="filter__card-name">Бренд</span>
+                                        <div class="filter__card-top-right">
+                                            <span class="filter__card-badge">очистить</span>
+                                            <svg class="icon" style="width: 12px; height: 12px; fill:#9d9d9d;">
+                                                <use href="#chevron-top"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="filter__checkbox">
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" class="filter__checkbox-input">
+                                            <span class="filter__checkbox-icon">
+                                                <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
+                                            </span>
+                                            <span>ARMANIE</span>
+                                            <span class="filter__checkbox-count">36</span>
+                                        </label>
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" class="filter__checkbox-input">
+                                            <span class="filter__checkbox-icon">
+                                                <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
+                                            </span>
+                                            <span>ARMANIE</span>
+                                            <span class="filter__checkbox-count">36</span>
+                                        </label>
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" class="filter__checkbox-input">
+                                            <span class="filter__checkbox-icon">
+                                                <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
+                                            </span>
+                                            <span>ARMANIE</span>
+                                            <span class="filter__checkbox-count">36</span>
+                                        </label>
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" class="filter__checkbox-input">
+                                            <span class="filter__checkbox-icon">
+                                                <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
+                                            </span>
+                                            <span>ARMANIE</span>
+                                            <span class="filter__checkbox-count">36</span>
+                                        </label>
+                                        <div class="filter__show-more">Показать ещё</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="filter__checkbox">
-                                <label class="filter__checkbox-label">
-                                    <input type="checkbox" class="filter__checkbox-input">
-                                    <span class="filter__checkbox-icon">
-                                        <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
-                                    </span>
-                                    <span>ARMANIE</span>
-                                    <span class="filter__checkbox-count">36</span>
-                                </label>
-                                <label class="filter__checkbox-label">
-                                    <input type="checkbox" class="filter__checkbox-input">
-                                    <span class="filter__checkbox-icon">
-                                        <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
-                                    </span>
-                                    <span>ARMANIE</span>
-                                    <span class="filter__checkbox-count">36</span>
-                                </label>
-                                <label class="filter__checkbox-label">
-                                    <input type="checkbox" class="filter__checkbox-input">
-                                    <span class="filter__checkbox-icon">
-                                        <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
-                                    </span>
-                                    <span>ARMANIE</span>
-                                    <span class="filter__checkbox-count">36</span>
-                                </label>
-                                <label class="filter__checkbox-label">
-                                    <input type="checkbox" class="filter__checkbox-input">
-                                    <span class="filter__checkbox-icon">
-                                        <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
-                                    </span>
-                                    <span>ARMANIE</span>
-                                    <span class="filter__checkbox-count">36</span>
-                                </label>
-                                <div class="filter__show-more">Показать ещё</div>
-                            </div>
-                        </div>
-                        <div class="filter__card">
-                            <div class="filter__card-top">
-                                <span class="filter__card-name">Страна производителя</span>
-                                <div class="filter__card-top-right">
-                                    <span class="filter__card-badge">очистить</span>
-                                    <svg class="icon" style="width: 12px; height: 12px; fill:#9d9d9d;">
-                                        <use href="#chevron-top"></use>
-                                    </svg>
+                                <div class="filter__card">
+                                    <div class="filter__card-top">
+                                        <span class="filter__card-name">Страна производителя</span>
+                                        <div class="filter__card-top-right">
+                                            <span class="filter__card-badge">очистить</span>
+                                            <svg class="icon" style="width: 12px; height: 12px; fill:#9d9d9d;">
+                                                <use href="#chevron-top"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="filter__checkbox">
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" class="filter__checkbox-input">
+                                            <span class="filter__checkbox-icon">
+                                                <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
+                                            </span>
+                                            <span>ARMANIE</span>
+                                            <span class="filter__checkbox-count">36</span>
+                                        </label>
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" class="filter__checkbox-input">
+                                            <span class="filter__checkbox-icon">
+                                                <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
+                                            </span>
+                                            <span>ARMANIE</span>
+                                            <span class="filter__checkbox-count">36</span>
+                                        </label>
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" class="filter__checkbox-input">
+                                            <span class="filter__checkbox-icon">
+                                                <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
+                                            </span>
+                                            <span>ARMANIE</span>
+                                            <span class="filter__checkbox-count">36</span>
+                                        </label>
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" class="filter__checkbox-input">
+                                            <span class="filter__checkbox-icon">
+                                                <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
+                                            </span>
+                                            <span>ARMANIE</span>
+                                            <span class="filter__checkbox-count">36</span>
+                                        </label>
+                                        <div class="filter__show-more">Показать ещё</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="filter__checkbox">
-                                <label class="filter__checkbox-label">
-                                    <input type="checkbox" class="filter__checkbox-input">
-                                    <span class="filter__checkbox-icon">
-                                        <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
-                                    </span>
-                                    <span>ARMANIE</span>
-                                    <span class="filter__checkbox-count">36</span>
-                                </label>
-                                <label class="filter__checkbox-label">
-                                    <input type="checkbox" class="filter__checkbox-input">
-                                    <span class="filter__checkbox-icon">
-                                        <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
-                                    </span>
-                                    <span>ARMANIE</span>
-                                    <span class="filter__checkbox-count">36</span>
-                                </label>
-                                <label class="filter__checkbox-label">
-                                    <input type="checkbox" class="filter__checkbox-input">
-                                    <span class="filter__checkbox-icon">
-                                        <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
-                                    </span>
-                                    <span>ARMANIE</span>
-                                    <span class="filter__checkbox-count">36</span>
-                                </label>
-                                <label class="filter__checkbox-label">
-                                    <input type="checkbox" class="filter__checkbox-input">
-                                    <span class="filter__checkbox-icon">
-                                        <svg class="icon filter__checkbox-svg"><use href="#check-box"></use></svg>
-                                    </span>
-                                    <span>ARMANIE</span>
-                                    <span class="filter__checkbox-count">36</span>
-                                </label>
-                                <div class="filter__show-more">Показать ещё</div>
                             </div>
                         </div>
                     </div>
                     <div class="category__products">
                         <div class="category__inner-prods">
-                            <div class="card">
-                                <a href="" class="card__img-link">
-                                    <img src="img/prod.png" alt="" class="card__img">
-                                </a>
-                                <div class="card__body">
-                                    <h5 class="card__title">Коврик для ванной HOMECLUB Aquamarine 50х80см, шенилл, в ассортименте Арт. GM003-4</h5>
-                                    <div class="card__rating">
-                                        <span>Китай</span>
-                                    </div>
-                                    <div class="card__prices">
-                                        <span>По карте</span>
-                                        <div>
-                                            <span class="card__price-big">109</span>
-                                            <small class="card__price-small">00</small>
-                                            <span class="card__price-icon">₽</span>
+                            <div class="category__product-item">
+                                <div class="card">
+                                    <a href="" class="card__img-link">
+                                        <img src="img/prod.png" alt="" class="card__img">
+                                    </a>
+                                    <div class="card__body">
+                                        <h5 class="card__title">Коврик для ванной HOMECLUB Aquamarine 50х80см, шенилл, в ассортименте Арт. GM003-4</h5>
+                                        <div class="card__rating">
+                                            <span>Китай</span>
+                                            <svg class="icon card__rating-icon">
+                                                <use href="#rating-star"></use>
+                                            </svg>
+                                            <span class="card__rating-value">4.8</span>
+                                        </div>
+                                        <div class="card__prices">
+                                            <span>По карте</span>
+                                            <div>
+                                                <span class="card__price-big">109</span>
+                                                <small class="card__price-small">00</small>
+                                                <span class="card__price-icon">₽</span>
+                                            </div>
+                                        </div>
+                                        <div class="card__prices">
+                                            <span>Обычная цена</span>
+                                            <div>
+                                                <span class="card__price-big card__price-big--old">153</span>
+                                                <small class="card__price-small card__price-small--old">89</small>
+                                                <span class="card__price-icon card__price-icon--old">₽</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="card__prices">
-                                        <span>Обычная цена</span>
-                                        <div>
-                                            <span class="card__price-big card__price-big--old">153</span>
-                                            <small class="card__price-small card__price-small--old">89</small>
-                                            <span class="card__price-icon card__price-icon--old">₽</span>
-                                        </div>
+                                    <div class="card__buttons">
+                                        <!-- <button class="btn card__btn">В корзину</button> -->
+                                        <button class="btn btn--control card__btn">
+                                            <span class="btn__icon">
+                                                <svg class="icon btn__control-icon">
+                                                    <use href="#minus"></use>
+                                                </svg>
+                                            </span>
+                                            <input class="btn__input" type="text" placeholder="1 ШТ"/>
+                                            <span class="btn__icon">
+                                                <svg class="icon btn__control-icon">
+                                                    <use href="#plus"></use>
+                                                </svg>
+                                            </span>
+                                        </button>
                                     </div>
+                                    <div class="card__percent">-47%</div>
+                                    <svg class="icon card__favorite-icon">
+                                        <use href="#add-favourite"></use>
+                                    </svg>
                                 </div>
-                                <div class="card__buttons">
-                                    <button class="btn card__btn">В корзину</button>
-                                    <button class="btn card__btn">В корзину</button>
+                            </div>
+                            <div class="category__product-item">
+                                <div class="card">
+                                    <a href="" class="card__img-link">
+                                        <img src="img/prod.png" alt="" class="card__img">
+                                    </a>
+                                    <div class="card__body">
+                                        <h5 class="card__title">Коврик для ванной HOMECLUB Aquamarine 50х80см, шенилл, в ассортименте Арт. GM003-4</h5>
+                                        <div class="card__rating">
+                                            <span>Китай</span>
+                                            <svg class="icon card__rating-icon">
+                                                <use href="#rating-star"></use>
+                                            </svg>
+                                            <span class="card__rating-value">4.8</span>
+                                        </div>
+                                        <div class="card__prices">
+                                            <span>По карте</span>
+                                            <div>
+                                                <span class="card__price-big">109</span>
+                                                <small class="card__price-small">00</small>
+                                                <span class="card__price-icon">₽</span>
+                                            </div>
+                                        </div>
+                                        <div class="card__prices">
+                                            <span>Обычная цена</span>
+                                            <div>
+                                                <span class="card__price-big card__price-big--old">153</span>
+                                                <small class="card__price-small card__price-small--old">89</small>
+                                                <span class="card__price-icon card__price-icon--old">₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__buttons">
+                                        <button class="btn card__btn">В корзину</button>
+                                        <!-- <button class="btn btn--control card__btn">
+                                            <span class="btn__icon">
+                                                <svg class="icon btn__control-icon">
+                                                    <use href="#minus"></use>
+                                                </svg>
+                                            </span>
+                                            <input class="btn__input" type="text" placeholder="1 ШТ"/>
+                                            <span class="btn__icon">
+                                                <svg class="icon btn__control-icon">
+                                                    <use href="#plus"></use>
+                                                </svg>
+                                            </span>
+                                        </button> -->
+                                    </div>
+                                    <div class="card__percent">-47%</div>
+                                    <svg class="icon card__favorite-icon">
+                                        <use href="#add-favourite"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="category__product-item">
+                                <div class="card">
+                                    <a href="" class="card__img-link">
+                                        <img src="img/prod.png" alt="" class="card__img">
+                                    </a>
+                                    <div class="card__body">
+                                        <h5 class="card__title">Коврик для ванной HOMECLUB Aquamarine 50х80см, шенилл, в ассортименте Арт. GM003-4</h5>
+                                        <div class="card__rating">
+                                            <span>Китай</span>
+                                            <svg class="icon card__rating-icon">
+                                                <use href="#rating-star"></use>
+                                            </svg>
+                                            <span class="card__rating-value">4.8</span>
+                                        </div>
+                                        <div class="card__prices">
+                                            <span>По карте</span>
+                                            <div>
+                                                <span class="card__price-big">109</span>
+                                                <small class="card__price-small">00</small>
+                                                <span class="card__price-icon">₽</span>
+                                            </div>
+                                        </div>
+                                        <div class="card__prices">
+                                            <span>Обычная цена</span>
+                                            <div>
+                                                <span class="card__price-big card__price-big--old">153</span>
+                                                <small class="card__price-small card__price-small--old">89</small>
+                                                <span class="card__price-icon card__price-icon--old">₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__buttons">
+                                        <button class="btn card__btn">В корзину</button>
+                                        <button class="btn btn--control card__btn">
+                                            <span class="btn__icon">
+                                                <svg class="icon btn__control-icon">
+                                                    <use href="#minus"></use>
+                                                </svg>
+                                            </span>
+                                            <input class="btn__input" type="text" placeholder="1 ШТ"/>
+                                            <span class="btn__icon">
+                                                <svg class="icon btn__control-icon">
+                                                    <use href="#plus"></use>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="card__percent">-47%</div>
+                                    <svg class="icon card__favorite-icon">
+                                        <use href="#add-favourite"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="category__product-item">
+                                <div class="card">
+                                    <a href="" class="card__img-link">
+                                        <img src="img/prod.png" alt="" class="card__img">
+                                    </a>
+                                    <div class="card__body">
+                                        <h5 class="card__title">Коврик для ванной HOMECLUB Aquamarine 50х80см, шенилл, в ассортименте Арт. GM003-4</h5>
+                                        <div class="card__rating">
+                                            <span>Китай</span>
+                                            <svg class="icon card__rating-icon">
+                                                <use href="#rating-star"></use>
+                                            </svg>
+                                            <span class="card__rating-value">4.8</span>
+                                        </div>
+                                        <div class="card__prices">
+                                            <span>По карте</span>
+                                            <div>
+                                                <span class="card__price-big">109</span>
+                                                <small class="card__price-small">00</small>
+                                                <span class="card__price-icon">₽</span>
+                                            </div>
+                                        </div>
+                                        <div class="card__prices">
+                                            <span>Обычная цена</span>
+                                            <div>
+                                                <span class="card__price-big card__price-big--old">153</span>
+                                                <small class="card__price-small card__price-small--old">89</small>
+                                                <span class="card__price-icon card__price-icon--old">₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__buttons">
+                                        <button class="btn card__btn">В корзину</button>
+                                        <button class="btn btn--control card__btn">
+                                            <span class="btn__icon">
+                                                <svg class="icon btn__control-icon">
+                                                    <use href="#minus"></use>
+                                                </svg>
+                                            </span>
+                                            <input class="btn__input" type="text" placeholder="1 ШТ"/>
+                                            <span class="btn__icon">
+                                                <svg class="icon btn__control-icon">
+                                                    <use href="#plus"></use>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="card__percent">-47%</div>
+                                    <svg class="icon card__favorite-icon">
+                                        <use href="#add-favourite"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="category__product-item">
+                                <div class="card">
+                                    <a href="" class="card__img-link">
+                                        <img src="img/prod.png" alt="" class="card__img">
+                                    </a>
+                                    <div class="card__body">
+                                        <h5 class="card__title">Коврик для ванной HOMECLUB Aquamarine 50х80см, шенилл, в ассортименте Арт. GM003-4</h5>
+                                        <div class="card__rating">
+                                            <span>Китай</span>
+                                            <svg class="icon card__rating-icon">
+                                                <use href="#rating-star"></use>
+                                            </svg>
+                                            <span class="card__rating-value">4.8</span>
+                                        </div>
+                                        <div class="card__prices">
+                                            <span>По карте</span>
+                                            <div>
+                                                <span class="card__price-big">109</span>
+                                                <small class="card__price-small">00</small>
+                                                <span class="card__price-icon">₽</span>
+                                            </div>
+                                        </div>
+                                        <div class="card__prices">
+                                            <span>Обычная цена</span>
+                                            <div>
+                                                <span class="card__price-big card__price-big--old">153</span>
+                                                <small class="card__price-small card__price-small--old">89</small>
+                                                <span class="card__price-icon card__price-icon--old">₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__buttons">
+                                        <button class="btn card__btn">В корзину</button>
+                                        <button class="btn btn--control card__btn">
+                                            <span class="btn__icon">
+                                                <svg class="icon btn__control-icon">
+                                                    <use href="#minus"></use>
+                                                </svg>
+                                            </span>
+                                            <input class="btn__input" type="text" placeholder="1 ШТ"/>
+                                            <span class="btn__icon">
+                                                <svg class="icon btn__control-icon">
+                                                    <use href="#plus"></use>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="card__percent">-47%</div>
+                                    <svg class="icon card__favorite-icon">
+                                        <use href="#add-favourite"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="category__product-item">
+                                <div class="card">
+                                    <a href="" class="card__img-link">
+                                        <img src="img/prod.png" alt="" class="card__img">
+                                    </a>
+                                    <div class="card__body">
+                                        <h5 class="card__title">Коврик для ванной HOMECLUB Aquamarine 50х80см, шенилл, в ассортименте Арт. GM003-4</h5>
+                                        <div class="card__rating">
+                                            <span>Китай</span>
+                                            <svg class="icon card__rating-icon">
+                                                <use href="#rating-star"></use>
+                                            </svg>
+                                            <span class="card__rating-value">4.8</span>
+                                        </div>
+                                        <div class="card__prices">
+                                            <span>По карте</span>
+                                            <div>
+                                                <span class="card__price-big">109</span>
+                                                <small class="card__price-small">00</small>
+                                                <span class="card__price-icon">₽</span>
+                                            </div>
+                                        </div>
+                                        <div class="card__prices">
+                                            <span>Обычная цена</span>
+                                            <div>
+                                                <span class="card__price-big card__price-big--old">153</span>
+                                                <small class="card__price-small card__price-small--old">89</small>
+                                                <span class="card__price-icon card__price-icon--old">₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__buttons">
+                                        <button class="btn card__btn">В корзину</button>
+                                        <button class="btn btn--control card__btn">
+                                            <span class="btn__icon">
+                                                <svg class="icon btn__control-icon">
+                                                    <use href="#minus"></use>
+                                                </svg>
+                                            </span>
+                                            <input class="btn__input" type="text" placeholder="1 ШТ"/>
+                                            <span class="btn__icon">
+                                                <svg class="icon btn__control-icon">
+                                                    <use href="#plus"></use>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="card__percent">-47%</div>
+                                    <svg class="icon card__favorite-icon">
+                                        <use href="#add-favourite"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="category__product-item">
+                                <div class="card">
+                                    <a href="" class="card__img-link">
+                                        <img src="img/prod.png" alt="" class="card__img">
+                                    </a>
+                                    <div class="card__body">
+                                        <h5 class="card__title">Коврик для ванной HOMECLUB Aquamarine 50х80см, шенилл, в ассортименте Арт. GM003-4</h5>
+                                        <div class="card__rating">
+                                            <span>Китай</span>
+                                            <svg class="icon card__rating-icon">
+                                                <use href="#rating-star"></use>
+                                            </svg>
+                                            <span class="card__rating-value">4.8</span>
+                                        </div>
+                                        <div class="card__prices">
+                                            <span>По карте</span>
+                                            <div>
+                                                <span class="card__price-big">109</span>
+                                                <small class="card__price-small">00</small>
+                                                <span class="card__price-icon">₽</span>
+                                            </div>
+                                        </div>
+                                        <div class="card__prices">
+                                            <span>Обычная цена</span>
+                                            <div>
+                                                <span class="card__price-big card__price-big--old">153</span>
+                                                <small class="card__price-small card__price-small--old">89</small>
+                                                <span class="card__price-icon card__price-icon--old">₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__buttons">
+                                        <button class="btn card__btn">В корзину</button>
+                                        <button class="btn btn--control card__btn">
+                                            <span class="btn__icon">
+                                                <svg class="icon btn__control-icon">
+                                                    <use href="#minus"></use>
+                                                </svg>
+                                            </span>
+                                            <input class="btn__input" type="text" placeholder="1 ШТ"/>
+                                            <span class="btn__icon">
+                                                <svg class="icon btn__control-icon">
+                                                    <use href="#plus"></use>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="card__percent">-47%</div>
+                                    <svg class="icon card__favorite-icon">
+                                        <use href="#add-favourite"></use>
+                                    </svg>
                                 </div>
                             </div>
                         </div>
@@ -352,7 +726,7 @@
               <a href="#" class="footer__list-link">Вакансии</a>
               <a href="#" class="footer__list-link">Контакты</a>
             </li>
-             <li class="footer__list-item">
+            <li class="footer__list-item">
               <h5 class="footer__list-title">Покупателям</h5>
               <a href="#" class="footer__list-link">Карта покупателя</a>
               <a href="#" class="footer__list-link">Подарочные карты</a>
@@ -363,7 +737,7 @@
               <a href="#" class="footer__list-link">Не нашли товар (опрос)</a>
               <a href="#" class="footer__list-link">Безопасность покупателей</a>
             </li>
-             <li class="footer__list-item">
+            <li class="footer__list-item">
               <h5 class="footer__list-title">Юридическим лицам</h5>
               <a href="#" class="footer__list-link">Поставщикам</a>
               <a href="#" class="footer__list-link">Рекламодателям</a>
@@ -371,7 +745,7 @@
               <a href="#" class="footer__list-link">Лента PRO для бизнеса</a>
               <a href="#" class="footer__list-link">Лента ОПТ</a>
             </li>
-             <li class="footer__list-item">
+            <li class="footer__list-item">
               <h5 class="footer__list-title">Скачайте приложение</h5>
               <div class="footer__app">
                 <a href="#" class="footer__app-btn">
